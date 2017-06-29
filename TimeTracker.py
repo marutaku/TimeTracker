@@ -1,8 +1,6 @@
 import sys
-import tweetModule
-import DbController
-import commandController
+from command import CommandController
 
 args = sys.argv
-command = args[1]
-
+command_array = [args[1], args[2]]
+command = CommandController(command_array)
